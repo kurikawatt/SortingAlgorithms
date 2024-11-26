@@ -13,3 +13,7 @@ def selection_sort(l:list) -> None:
         if i != mini:
             l[i], l[mini] = l[mini], l[i]
 
+def selection_sort_copy(l:list) -> list:
+    cl = l[:]
+    selection_sort(cl)
+    return cl
